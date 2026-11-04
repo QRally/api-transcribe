@@ -50,7 +50,6 @@
       background: var(--card-bg);
     }
 
-    /* Seamless container for the pace sheet preview */
     .preview-panel {
       display: flex;
       flex-direction: column;
@@ -166,36 +165,6 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       font-family: Arial, Helvetica, sans-serif;
       border-radius: 4px;
-    }
-
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 4px;
-      font-size: 0.85rem;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-    }
-
-    .header-double-rule {
-      border-top: 2px solid #000;
-      border-bottom: 1px solid #000;
-      height: 2px;
-      margin-bottom: 30px;
-    }
-
-    .stage-banner {
-      margin: 20px 0 30px;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-
-    .stage-rule {
-      border-bottom: 1px solid #000;
-      margin-bottom: 25px;
     }
 
     .notes-table {
@@ -323,14 +292,14 @@
         <textarea
           id="rawNotes"
           placeholder="Transcribed text will appear here..."
-        >QRALLY TEST
+        >SS7 - GARTHENIOG
 L2 CREST KEEP CENTRE
-R6 - L5 100
-R3> - L3 Dip 50
+R6-L5 100
+R3>-L3 DIP 50
 R6 100
 R5 LNG 50
 NOTES BY RODGE
-R3 50 L3 DIP CAUTION
+R3 - L3 DIP CAUTION 50
 R4 40</textarea>
       </div>
 
@@ -339,18 +308,9 @@ R4 40</textarea>
       </button>
     </section>
 
-    <!-- Clean Output Area without extra panel header/border -->
+    <!-- Clean Output Area -->
     <section class="preview-panel">
       <div class="pace-sheet" id="paceSheet">
-        <div class="header-top">
-          <span>STAGE: SS7</span>
-          <span>PAGE: 1</span>
-        </div>
-        <div class="header-double-rule"></div>
-
-        <div class="stage-banner">SS7 - GARTHENIOG</div>
-        <div class="stage-rule"></div>
-
         <table class="notes-table">
           <tbody id="notesBody"></tbody>
         </table>
